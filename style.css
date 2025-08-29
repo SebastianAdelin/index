@@ -1,0 +1,240 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+/* Imagine de fundal pentru body */
+#HeroPage {
+  background-image: url('../img/background.jpg');
+  backdrop-filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.9));
+  background-size: cover;         /* acoperă tot ecranul */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+nav {
+  display: flex;
+  background-color: #f7d0bc;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.45vw 0vw 0.45vw 0vw;
+  color: black;
+  font-family: Century Gothic;
+
+  /*  */
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#Title {
+  font-style: italic ;
+  font-size: 100px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFB38C, #FFA07A, #FFBC99, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+mark.pop {
+  background-color: #ffea80;  /* galben deschis, ca un marker */
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+mark.pop:hover {
+  background-color: #ffd24d;  /* mai intens la hover */
+  transform: scale(1.15);     /* face textul să „sară” */
+  box-shadow: 0 0 12px rgba(255, 200, 0, 0.6); /* glow galben */
+}
+
+#Verse {
+  font-size: 21px;
+}
+
+#YouVersion{
+  width: 15%;
+  margin: auto;
+}
+
+#GridDiv{
+  margin: 10vw 5vw 10px 5vw;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: CENTER;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 30px;
+  justify-content: center;
+  width: fit-content;
+}
+
+.grids
+{
+  background-color: #f7d0bc;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.Footer{
+  display: block;
+  width: auto;
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  font-family: Century Gothic;
+  color: white;
+  padding: 4vw;
+  background: #555555;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 2vw;
+  width: fit-content;
+  background: #f7d0bc;
+}
+
+@media screen and (max-width: 600px) {
+  #HeroPage {
+    background-width: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #Title {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #Verse {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #YouVersion{
+    width: 40%;
+  }
+
+  #GridDiv{
+    display: grid;
+    grid-template-columns: 1fr;  /* 1 pe coloană */
+    justify-items: center;
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .grids {
+    width: 70%;
+    padding: 20px;
+  }
+
+  button{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #Title {
+    margin-bottom: 20px;
+  }
+
+  #Verse {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  button
+  {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
