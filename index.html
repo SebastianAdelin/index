@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" ?lang="ro">
+
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+
+
+  <!--Scripts-->
+
+  <script>
+    window.onload = () =>
+    {
+      let Questions = [
+        "Ce să fac atunci când simt că nu mai am pace în suflet?",
+        "Ce să fac atunci când simt că nu mai am control asupra lucrurilor?",
+        "Dacă simt că nu mai am niciun rost, că sunt prea mic ca să contez?",
+        "Cum să mă raportez la frică atunci când mă copleșește?",
+        "Ce să fac atunci când nu mai am încredere în viitor?",
+        "Cum să continui când mă simt obosit și descurajat?"
+      ];
+
+      let Answers = [
+        "„Vă las pacea, vă dau pacea Mea. Nu v-o dau cum o dă lumea. Să nu vi se tulbure inima, nici să nu se înspăimânte.” (Ioan 14:27)",
+        "„Încrede-te în Domnul din toată inima ta și nu te bizui pe înțelepciunea ta! Recunoaște-L în toate căile tale, și El îți va netezi cărările.” (Proverbe 3:5-6)",
+        "„Căci Eu știu gândurile pe care le am cu privire la voi, zice Domnul, gânduri de pace și nu de nenorocire, ca să vă dau un viitor și o nădejde.” (Ieremia 29:11)",
+        "„Nu te teme, căci Eu sunt cu tine; nu te uita cu îngrijorare, căci Eu sunt Dumnezeul tău; Eu te întăresc, tot Eu îți vin în ajutor, Eu te sprijin cu dreapta Mea biruitoare.” (Isaia 41:10)",
+        "„Aruncați asupra Lui toate îngrijorările voastre, căci El însuși îngrijește de voi.” (1 Petru 5:7)",
+        "„Veniți la Mine, toți cei trudiți și împovărați, și Eu vă voi da odihnă.” (Matei 11:28)"
+      ];
+
+      let a = 0, b = 0, c = 0;
+
+      do {
+        a = Math.floor(Math.random() * Questions.length);
+        b = Math.floor(Math.random() * Questions.length);
+        c = Math.floor(Math.random() * Questions.length);
+      } while (a === b || b === c || a === c);
+
+      document.getElementById("gridQuestion1").innerHTML = Questions[a];
+      document.getElementById("gridAnsware1").innerHTML = Answers[a];
+      document.getElementById("gridQuestion2").innerHTML = Questions[b];
+      document.getElementById("gridAnsware2").innerHTML = Answers[b];
+      document.getElementById("gridQuestion3").innerHTML = Questions[c];
+      document.getElementById("gridAnsware3").innerHTML = Answers[c];
+
+
+      /*
+      note:
+      --> exista obiecte in JS:
+          const car = {type:"Opel" , model:"Bestia", plate:"AR23DMV"};
+       */
+    }
+  </script>
+
+  <script>
+    function GetDate()
+    {
+      const date = new Date();
+      return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
+    }
+  </script>
+</head>
+
+
+
+<body id="bodyIndex">
+
+<script src="js/app.js"></script>
+
+
+
+<!-- Hero page -->
+<div id="HeroPage" style="text-align: center;">
+  <p id="Title">Ioan 3:16</p>
+
+  <p id="Verse">
+      Fiindcă atât de mult a iubit Dumnezeu lumea, încât L-a dat pe singurul Lui Fiu, pentru ca
+      <mark style="background-color: #f7d0bc; padding: 2px">
+        oricine crede în El să nu piară, ci să aibă viaţă veşnică.
+      </mark>
+    </p>
+
+  <a href="https://www.bible.com/ro/bible/191/JHN.3.16.VDC" alt="Biblia Corniliescu Ioan 3:16">
+    <img id="YouVersion" src="img/pngegg.png" alt="Holy Bible YouVersion"/>
+  </a>
+</div>
+
+<div>
+<nav>
+  <a href="https://www.bible.com/bible/191/JHN.3.VDC">Citeste📖</a> |
+  <a href="/css/">Nu</a> |
+  <a href="/js/">mai am</a> |
+  <a href="/jquery/">ce pune</a>
+</nav>
+</div>
+
+
+
+
+<!-- Grid with verses -->
+<div id="GridDiv">
+
+    <div class = "grids">
+      <h2 id="gridQuestion1">Ce să fac atunci când simt că nu mai am pace în suflet?</h2>
+      <p id="gridAnsware1">„Vă las pacea, vă dau pacea Mea. Nu v-o dau cum o dă lumea. Să nu vi se tulbure inima, nici să nu se înspăimânte.”</p>
+    </div>
+
+    <div class = "grids">
+      <h2 id="gridQuestion2">Ce să fac atunci când simt că nu mai am control asupra lucrurilor?</h2>
+      <p id="gridAnsware2">„Încrede-te în Domnul din toată inima ta și nu te bizui pe înțelepciunea ta! Recunoaște-L în toate căile tale, și El îți va netezi cărările.”</p>
+    </div>
+
+    <div class = "grids">
+      <h2 id="gridQuestion3">Dacă simt că nu mai am niciun rost, că sunt prea mic ca să contez?</h2>
+      <p id="gridAnsware3">„Căci Eu știu gândurile pe care le am cu privire la voi, zice Domnul, gânduri de pace și nu de nenorocire, ca să vă dau un viitor și o nădejde.”</p>
+    </div>
+
+    <select
+      id="mySelect"
+      onchange="document.getElementById(this.value).innerHTML = GetDate();"
+      style="font-family: 'Century Gothic';
+      background-color: #f7d0bc;
+      border: none;
+      padding: 2px;
+      height: fit-content;">
+
+      <option value="gridQuestion1">gridQuestion1</option>
+      <option value="gridQuestion2">gridQuestion2</option>
+      <option value="gridQuestion3">gridQuestion3</option>
+    </select>
+
+<!-- Atention!!  Refreshes the ENTIRE PAGE -->
+    <div style="text-align: center; margin: 0vw 0vw 2.5vw 0vw;">
+      <button onclick="window.onload()">Refresh</button>
+    </div>
+</div>
+
+
+
+  <!--
+    <iframe src="https://www.bible.com/ro/bible/191/JHN.3.16.VDC" title="Ioan 3:16" style="width: 100% ; height: 500px"></iframe>
+  -->
+
+
+
+
+
+ <div class = "Footer">
+   <p>@sebastian.adelin</p>
+ </div>
+
+</body>
+</html>
