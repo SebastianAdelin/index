@@ -63,7 +63,7 @@ html, body {
 
 /* Imagine de fundal pentru body */
 #HeroPage {
-  background-image: url('../img/background.jpg');
+  background-image: url('img/background.jpg');
   backdrop-filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.9));
   background-size: cover;         /* acoperă tot ecranul */
   background-repeat: no-repeat;
